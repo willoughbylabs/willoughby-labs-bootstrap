@@ -4,3 +4,11 @@
     --salmon: #E44F59;
     --white:  #dbdbdb;
 }
+
+.navbar-brand img {
+    max-height: 30px;
+}
+
+.nav-item {
+    color: var(--golden);
+}
