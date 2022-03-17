@@ -5,10 +5,16 @@
     --white:  #dbdbdb;
 }
 
+/* NAVBAR */
 .navbar-brand img {
     max-height: 30px;
 }
 
 .nav-item {
     color: var(--golden);
+}
+
+/* MARKUP */
+.strikethrough {
+    text-decoration: line-through;
 }
