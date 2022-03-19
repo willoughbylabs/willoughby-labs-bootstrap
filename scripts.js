@@ -1,11 +1,6 @@
 const navbar = document.getElementById('navbar');
 const pageContent = document.getElementById('page-content');
 
-// BOOTSTRAP DEPENDENCIES
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl)
-})
 
 navbar.addEventListener("click", (event) => {
     let selectedLink = event.target.id;
@@ -21,6 +16,9 @@ function displayPageContent(selectedLink) {
             break;
         case "projects-link":
             content = "<projects-page></projects-page>";
+            break;
+        case "articles-link":
+            content = "<articles-page></articles-page>";
             break;
         case "about-link":
             content = "<about-page></about-page>";
