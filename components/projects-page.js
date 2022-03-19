@@ -6,6 +6,7 @@ class ProjectsPage extends LitElement {
             <h2>Projects</h2>
             <p>Brought to you by the teacher in everyone. I hope you'll discover something fetch.</p>
             
+            <!-- TODO: make cards into components  -->
             <!-- CScrub -->
             <div class="card" style="width: 18rem;">
                 <img src="../img/cscrub.png" class="card-img-top"
@@ -37,7 +38,7 @@ class ProjectsPage extends LitElement {
                         </a>
                     </h5>
             
-                    <p class="card-text">A JSON API that provides council members, legislation, and votes from Chicago City Council
+                    <p class="card-text">A JSON API that shares council members, legislation, and votes from Chicago City Council
                         meetings.</p>
                     <span class="badge bg-warning text-dark">Express</span>
                     <span class="badge bg-warning text-dark">JSON</span>
