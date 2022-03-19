@@ -6,7 +6,10 @@ class ArticlesPage extends LitElement {
         <div class="container-fluid">
             <h2>Article Generator</h2>
             <div class="page-intro">
-                <p>Sometimes I'm in the mood to write (blog | Twitter). Shoutout to my favorite writing tool, Notion; it's
+                <p>Sometimes I'm in the mood to write (<a href="https://blog.willoughbylabs.com/" target="_blank"
+                        rel="noopener noreferrer">blog</a> | <a href="https://twitter.com/willowbeehive" target="_blank"
+                        rel="noopener noreferrer">Twitter</a>). Shoutout to my favorite writing tool, <a
+                        href="https://www.notion.so/" target="_blank" rel="noopener noreferrer">Notion</a>; it's
                     pretty
                     fetch.</p>
             </div>

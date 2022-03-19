@@ -3,8 +3,7 @@ import { LitElement, html } from "./lit-core.js";
 class HomePage extends LitElement {
     render() {
         return html`
-        <h1>Willoughby Labs</h1>
-        <h2>Make fetch happen</h2>
+        <h1>Make Fetch Happen</h1>
         `;
     }
     createRenderRoot() {
