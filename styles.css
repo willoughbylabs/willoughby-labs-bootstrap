@@ -10,7 +10,7 @@
     max-height: 30px;
 }
 
-/* MARKUP */
-.strikethrough {
-    text-decoration: line-through;
+/* PROJECTS */
+.project-img {
+    width: 100%;
 }
