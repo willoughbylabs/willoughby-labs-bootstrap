@@ -25,14 +25,17 @@
     <div class="container-fluid">
         <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark" id="navbar">
             <div class="container-fluid">
-                <a href="#" class="navbar-brand" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                    <img src="./img/logo-transparent-green.svg"
-                        alt="Willoughby Labs logo, intertwined letters 'AW' in a star shape" id="brand-link">
-                </a>
-                <a class="navbar-title" id="title-link" data-bs-toggle="collapse"
-                    data-bs-target=".navbar-collapse.show">
-                    Willoughby Labs
-                </a>
+                <div id="brand-links">
+                    <a href="#" class="navbar-brand navbar-title" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">
+                        <img src="./img/logo-transparent-green.svg"
+                            alt="Willoughby Labs logo, intertwined letters 'AW' in a star shape" id="brand-link">
+                    </a>
+                    <a class="navbar-title" id="title-link" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">
+                        Willoughby Labs
+                    </a>
+                </div>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -40,24 +43,52 @@
                 </button>
                 <div class="navbar-collapse collapse" id="navbarCollapse">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" id="projects-link" data-bs-toggle="collapse"
-                                data-bs-target=".navbar-collapse.show">
-                                Projects
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" id="articles-link" data-bs-toggle="collapse"
-                                data-bs-target=".navbar-collapse.show">
-                                Article Generator
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" id="about-link" data-bs-toggle="collapse"
-                                data-bs-target=".navbar-collapse.show">
-                                About
-                            </a>
-                        </li>
+                        <div id="main-links">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="projects-link" data-bs-toggle="collapse"
+                                    data-bs-target=".navbar-collapse.show">
+                                    Projects
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="articles-link" data-bs-toggle="collapse"
+                                    data-bs-target=".navbar-collapse.show">
+                                    Article Generator
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="about-link" data-bs-toggle="collapse"
+                                    data-bs-target=".navbar-collapse.show">
+                                    About
+                                </a>
+                            </li>
+                        </div> <!-- end main-links -->
+                        <div id="social-links">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.linkedin.com/in/willoughbylabs/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/willoughbylabs" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.instagram.com/willowbeehive/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://twitter.com/willowbeehive" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </li>
+                        </div> <!-- end social-links -->
                     </ul>
                 </div> <!-- end navbar-collapse -->
             </div>

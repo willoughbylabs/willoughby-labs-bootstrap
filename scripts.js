@@ -1,10 +1,14 @@
-const navbar = document.getElementById('navbar');
+const mainLinks = document.getElementById('main-links');
+const brandLinks = document.getElementById('brand-links');
 const pageContent = document.getElementById('page-content');
 
+brandLinks.addEventListener("click", (event) => {
+    content = "<home-page></home-page>";
+    pageContent.innerHTML = content;
+})
 
-navbar.addEventListener("click", (event) => {
+mainLinks.addEventListener("click", (event) => {
     let selectedLink = event.target.id;
-    console.log(selectedLink);
     displayPageContent(selectedLink);
 })
 
@@ -12,12 +16,6 @@ function displayPageContent(selectedLink) {
     let content;
 
     switch (selectedLink) {
-        case "brand-link":
-            content = "<home-page></home-page>";
-            break;
-        case "title-link":
-            content = "<home-page></home-page>";
-            break;
         case "projects-link":
             content = "<projects-page></projects-page>";
             break;
