@@ -4,6 +4,7 @@ const pageContent = document.getElementById('page-content');
 
 navbar.addEventListener("click", (event) => {
     let selectedLink = event.target.id;
+    console.log(selectedLink);
     displayPageContent(selectedLink);
 })
 
@@ -11,7 +12,10 @@ function displayPageContent(selectedLink) {
     let content;
 
     switch (selectedLink) {
-        case "home-link":
+        case "brand-link":
+            content = "<home-page></home-page>";
+            break;
+        case "title-link":
             content = "<home-page></home-page>";
             break;
         case "projects-link":

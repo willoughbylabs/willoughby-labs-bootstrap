@@ -4,7 +4,7 @@ class HomePage extends LitElement {
     render() {
         return html`
         <h1>Willoughby Labs</h1>
-        <h3>Make fetch happen</h3>
+        <h2>Make fetch happen</h2>
         `;
     }
     createRenderRoot() {

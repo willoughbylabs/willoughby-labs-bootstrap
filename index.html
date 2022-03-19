@@ -22,11 +22,15 @@
 </head>
 
 <body>
-    <main class="container-fluid">
+    <div class="container-fluid">
         <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark" id="navbar">
             <div class="container-fluid">
-                <a href="#" class="navbar-brand"><img src="./img/logo-transparent-green.svg"
-                        alt="Willoughby Labs logo, intertwined letters 'AW' in a star shape" id="home-link"></a>
+                <a href="#" class="navbar-brand">
+                    <img src="./img/logo-transparent-green.svg"
+                        alt="Willoughby Labs logo, intertwined letters 'AW' in a star shape" id="brand-link">
+                </a>
+                <a class="navbar-title" id="title-link">Willoughby Labs
+                </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -38,13 +42,16 @@
                         <li class="nav-item"><a href="#" id="articles-link">Article Generator</a></li>
                         <li class="nav-item"><a href="#" id="about-link">About</a></li>
                     </ul>
-                </div> <!-- end navbar-collapse -->
-            </div> <!-- end nav container-fluid -->
+                </div>
+            </div>
         </nav>
-        <div id="page-content">
-            <home-page></home-page>
-        </div>
-    </main>
+        <main>
+            <div id="page-content">
+                <projects-page></projects-page>
+                <!-- <home-page></home-page> -->
+            </div>
+        </main>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
