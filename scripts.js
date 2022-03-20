@@ -1,13 +1,22 @@
+const body = document.querySelector('body');
+const brandLink = document.getElementById('brand-link');
 const mainLinks = document.getElementById('main-links');
-const brandLinks = document.getElementById('brand-links');
 const pageContent = document.getElementById('page-content');
 
-brandLinks.addEventListener("click", (event) => {
+brandLink.addEventListener("click", (event) => {
+    if (body.classList.contains("bkg-western")) {
+        body.classList.toggle("bkg-western");
+        body.classList.toggle("bkg-tribune");
+    }
     content = "<home-page></home-page>";
     pageContent.innerHTML = content;
 })
 
 mainLinks.addEventListener("click", (event) => {
+    if (body.classList.contains("bkg-tribune")) {
+        body.classList.toggle("bkg-tribune");
+        body.classList.toggle("bkg-western");
+    }
     let selectedLink = event.target.id;
     displayPageContent(selectedLink);
 })

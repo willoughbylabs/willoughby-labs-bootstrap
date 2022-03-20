@@ -5,6 +5,26 @@
     --white:  #dbdbdb;
 }
 
+/* GENERAL */
+body {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.bkg-tribune {
+        background-image: url(/img/tribune.jpg);
+}
+.bkg-western {
+        background-image: url(/img/western.jpg);
+}
+
+main {
+    margin-bottom: 60px;
+}
+
 /* NAVBAR */
 .navbar-brand img {
     max-height: 30px;

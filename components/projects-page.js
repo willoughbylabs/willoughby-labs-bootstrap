@@ -40,6 +40,7 @@ class ProjectsPage extends LitElement {
             
                     <p class="card-text">A JSON API that shares council members, legislation, and votes from Chicago City Council
                         meetings.</p>
+                    <span class="badge bg-warning text-dark">API</span>
                     <span class="badge bg-warning text-dark">Express</span>
                     <span class="badge bg-warning text-dark">JSON</span>
                     <span class="badge bg-warning text-dark">Node.js</span>
@@ -83,12 +84,14 @@ class ProjectsPage extends LitElement {
                     </a>
                     <p class="card-text">A template for a dashboard to display Chicago open data in an at-a-glance, concise
                         format. Built with the Train Tracker API.</p>
+                    <span class="badge bg-warning text-dark">API</span>
                     <span class="badge bg-warning text-dark">Bootstrap 5</span>
                     <span class="badge bg-warning text-dark">CSS</span>
                     <span class="badge bg-warning text-dark">Flask-SQLALchemy</span>
                     <span class="badge bg-warning text-dark">Heroku</span>
                     <span class="badge bg-warning text-dark">HTML</span>
                     <span class="badge bg-warning text-dark">Jasmine</span>
+                    <span class="badge bg-warning text-dark">JSON</span>
                     <span class="badge bg-warning text-dark">JavaScript</span>
                     <span class="badge bg-warning text-dark">Python</span>
                 </div>

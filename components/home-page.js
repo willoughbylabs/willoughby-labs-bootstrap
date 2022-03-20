@@ -3,7 +3,9 @@ import { LitElement, html } from "./lit-core.js";
 class HomePage extends LitElement {
     render() {
         return html`
-        <h1>Make Fetch Happen</h1>
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+            <h1>Make Fetch Happen</h1>
+        </div>
         `;
     }
     createRenderRoot() {
