@@ -3,7 +3,7 @@ import { LitElement, html } from "./lit-core.js";
 class AboutPage extends LitElement {
     render() {
         return html`
-        <div class="page-body">
+        <div class="page-body" style="max-width: 550px;">
             <h2 class="text-center">About</h2>
             <section>
                 <p class="text-center">
