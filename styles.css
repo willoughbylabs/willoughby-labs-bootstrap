@@ -16,6 +16,11 @@ body {
     background-attachment: fixed;
 }
 
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
 .bkg-tribune {
         background-image: url(/img/tribune.jpg);
 }
@@ -24,19 +29,14 @@ body {
 }
 
 /* HEADER */
-header {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #header-title {
+    background-color: rgba(0, 0, 0, 0.75);
     color: var(--green);
     font-family: var(--ff-header);
-    font-size: 2rem;
-}
-
-main {
-    margin-bottom: 60px;
+    font-size: 2.3rem;
+    padding: 1rem;
+    border-radius: .3rem;
+    margin: 0px;
 }
 
 /* NAVBAR */
@@ -44,11 +44,27 @@ main {
     max-height: 35px;
 }
 
-/* #social-links .nav-link {
-    padding: 22px;
-} */
+/* PAGE CONTENT */
+#page-content {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    width: 100%;
+}
+
+.page-body {
+    margin-bottom: 60px;
+}
 
 /* PROJECTS */
+.card {
+    max-width: 20rem;
+}
+
+.card a {
+    text-decoration: none;
+}
+
 .project-img {
     width: 100%;
 }

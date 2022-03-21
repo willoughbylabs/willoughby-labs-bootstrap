@@ -3,10 +3,10 @@ import { LitElement, html } from "./lit-core.js";
 class ArticlesPage extends LitElement {
     render() {
         return html`
-        <div class="container-fluid">
-            <h2>Article Generator</h2>
+        <div class="page-body">
+            <h2 class="text-center">Article Generator</h2>
             <section>
-                <div class="page-intro">
+                <div class="page-intro text-center">
                     <p>Sometimes I'm in the mood to write (
                         <a href="https://blog.willoughbylabs.com/" target="_blank" rel="noopener noreferrer">blog</a> |
                         <a href="https://twitter.com/willowbeehive" target="_blank" rel="noopener noreferrer">Twitter</a>).
@@ -22,7 +22,7 @@ class ArticlesPage extends LitElement {
                         style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                 </div> <!-- end iframe -->
             </section>
-        </div> <!-- end container-fluid -->
+        </div>
         `;
     }
     createRenderRoot() {
