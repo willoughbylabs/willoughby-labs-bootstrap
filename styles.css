@@ -41,8 +41,12 @@ main {
 
 /* NAVBAR */
 .navbar-brand img {
-    max-height: 30px;
+    max-height: 35px;
 }
+
+/* #social-links .nav-link {
+    padding: 22px;
+} */
 
 /* PROJECTS */
 .project-img {
