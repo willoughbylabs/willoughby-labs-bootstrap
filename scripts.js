@@ -1,9 +1,9 @@
 const body = document.querySelector('body');
-const brandLink = document.getElementById('brand-link');
+const brandLinks = document.getElementById('brand-links');
 const mainLinks = document.getElementById('main-links');
 const pageContent = document.getElementById('page-content');
 
-brandLink.addEventListener("click", (event) => {
+brandLinks.addEventListener("click", (event) => {
     if (body.classList.contains("bkg-western")) {
         body.classList.toggle("bkg-western");
         body.classList.toggle("bkg-tribune");

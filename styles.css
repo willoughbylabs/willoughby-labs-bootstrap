@@ -3,6 +3,8 @@
     --green: #8BD4A0;
     --salmon: #E44F59;
     --white:  #dbdbdb;
+
+    --ff-header: 'Satisfy', cursive;
 }
 
 /* GENERAL */
@@ -19,6 +21,18 @@ body {
 }
 .bkg-western {
         background-image: url(/img/western.jpg);
+}
+
+/* HEADER */
+header {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header-title {
+    color: var(--green);
+    font-family: var(--ff-header);
+    font-size: 2rem;
 }
 
 main {
