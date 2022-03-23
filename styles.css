@@ -11,17 +11,12 @@
 
 /* GENERAL */
 body {
-    background-color: rgb(30, 33, 36);
+    background-color: rgba(0, 0, 0, 0.75); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     font-family: var(--ff-body);
-}
-
-html, body {
-    height: 100vh;
-    width: 100vw;
 }
 
 .bkg-tribune {
@@ -56,9 +51,7 @@ html, body {
 /* PAGE CONTENT */
 #page-content {
     display: grid;
-    height: 100%;
     place-items: center;
-    width: 100%;
 }
 
 .page-body {
