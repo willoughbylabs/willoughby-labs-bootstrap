@@ -2,10 +2,26 @@ import { LitElement, html } from "./lit-core.js";
 
 class ProjectsPage extends LitElement {
 
-    cardTagsTempate(title) {
+    cardComponent(cardData) {
+        return html`
+        <div class="card mb-3 mx-2">
+            <h5 class="card-title my-3">
+                <a href="${cardData.siteLink}" target="_blank" rel="noopener noreferrer">${cardData.title}</a>    
+            </h5>
+            <img src="${cardData.imgSrc}" class="card-img-top" alt="${cardData.imgAlt}">
+            <div class="card-body">
+                <p class="card-text">
+                    ${cardData.cardText}
+                </p>
+            </div>
+        </div>
+        `
+    }
+
+    cardTags(tagName) {
         return html`
             <li class="list-inline-item">
-                <span class="badge bg-warning text-dark">${title}</span>
+                <span class="badge bg-warning text-dark">${tagName}</span>
             </li>
         `
     }
@@ -15,10 +31,16 @@ class ProjectsPage extends LitElement {
         <div class="page-body text-center">
             <h2>Projects</h2>
             <p>Brought to you by the teacher in everyone. I hope you'll discover something fetch.</p>
-        
             <!-- TODO: make cards into components  -->
             <!-- CScrub -->
             <section class="d-flex flex-wrap justify-content-center">
+                ${this.cardComponent({ 
+                    title: "CSscrub",
+                    siteLink: "https://github.com/willoughbylabs/cscrub",
+                    imgSrc: "../img/cscrub.png" ,
+                    imgAlt: "Views of Terminal windows showing SQL queries to retrieve alderpersons, meetings, legislation, and votes from a database.",
+                    cardText: "A bot to extract meetings, council members, legislation, and votes from the Chicago City Clerk's site."
+                    })}
                 <div class="card mb-3 mx-2">
                     <h5 class="card-title my-3">
                         <a href="https://github.com/willoughbylabs/cscrub" target="_blank" rel="noopener noreferrer">CScrub
@@ -33,10 +55,10 @@ class ProjectsPage extends LitElement {
                         <p class="card-text">A bot to extract meetings, council members, legislation, and votes from the
                             Chicago City Clerk's site.</p>
                         <ul class="d-flex flex-wrap justify-content-center list-inline">
-                            ${this.cardTagsTempate("Feedparser")}
-                            ${this.cardTagsTempate("PostgreSQL")}
-                            ${this.cardTagsTempate("Selenium")}
-                            ${this.cardTagsTempate("SQLAlchemy")}
+                            ${this.cardTags("Feedparser")}
+                            ${this.cardTags("PostgreSQL")}
+                            ${this.cardTags("Selenium")}
+                            ${this.cardTags("SQLAlchemy")}
                         </ul>
                     </div>
                 </div>
@@ -59,10 +81,10 @@ class ProjectsPage extends LitElement {
                             Council
                             meetings.</p>
                         <ul class="d-flex flex-wrap justify-content-center list-inline">
-                            ${this.cardTagsTempate("API")}
-                            ${this.cardTagsTempate("Express")}
-                            ${this.cardTagsTempate("JSON")}
-                            ${this.cardTagsTempate("Node.js")}
+                            ${this.cardTags("API")}
+                            ${this.cardTags("Express")}
+                            ${this.cardTags("JSON")}
+                            ${this.cardTags("Node.js")}
                         </ul>
                     </div>
                 </div>
@@ -89,11 +111,11 @@ class ProjectsPage extends LitElement {
                             for
                             others.</p>
                         <ul class="d-flex flex-wrap justify-content-center list-inline">
-                            ${this.cardTagsTempate("Bootstrap 3")}
-                            ${this.cardTagsTempate("CSS")}
-                            ${this.cardTagsTempate("GitHub Pages")}
-                            ${this.cardTagsTempate("HTML")}
-                            ${this.cardTagsTempate("JavaScript")}
+                            ${this.cardTags("Bootstrap 3")}
+                            ${this.cardTags("CSS")}
+                            ${this.cardTags("GitHub Pages")}
+                            ${this.cardTags("HTML")}
+                            ${this.cardTags("JavaScript")}
                         </ul>
                     </div>
                 </div>
@@ -116,16 +138,16 @@ class ProjectsPage extends LitElement {
                             concise
                             format. Built with the Train Tracker API.</p>
                         <ul class="d-flex flex-wrap justify-content-center list-inline">
-                            ${this.cardTagsTempate("API")}
-                            ${this.cardTagsTempate("Boostrap 5")}
-                            ${this.cardTagsTempate("CSS")}
-                            ${this.cardTagsTempate("Flask-SQLALchemy")}
-                            ${this.cardTagsTempate("Heroku")}
-                            ${this.cardTagsTempate("HTML")}
-                            ${this.cardTagsTempate("Jasmine")}
-                            ${this.cardTagsTempate("JSON")}
-                            ${this.cardTagsTempate("JavaScript")}
-                            ${this.cardTagsTempate("Python")}
+                            ${this.cardTags("API")}
+                            ${this.cardTags("Boostrap 5")}
+                            ${this.cardTags("CSS")}
+                            ${this.cardTags("Flask-SQLALchemy")}
+                            ${this.cardTags("Heroku")}
+                            ${this.cardTags("HTML")}
+                            ${this.cardTags("Jasmine")}
+                            ${this.cardTags("JSON")}
+                            ${this.cardTags("JavaScript")}
+                            ${this.cardTags("Python")}
                         </ul>
                     </div>
                 </div>
@@ -143,9 +165,9 @@ class ProjectsPage extends LitElement {
                     <div class="card-body">
                         <p class="card-text">Snapshots from here and there.</p>
                         <ul class="d-flex flex-wrap justify-content-center list-inline">
-                            ${this.cardTagsTempate("Pixel 6 Pro")}
-                            ${this.cardTagsTempate("Pixel 3a XL")}
-                            ${this.cardTagsTempate("Samsung Galaxy S II")}
+                            ${this.cardTags("Pixel 6 Pro")}
+                            ${this.cardTags("Pixel 3a XL")}
+                            ${this.cardTags("Samsung Galaxy S II")}
                         </ul>
                     </div>
                 </div>
@@ -165,11 +187,11 @@ class ProjectsPage extends LitElement {
                     <div class="card-body">
                         <p class="card-text">Personal site and playground for learning.</p>
                         <ul class="d-flex flex-wrap justify-content-center list-inline">
-                            ${this.cardTagsTempate("Bootstrap 5")}
-                            ${this.cardTagsTempate("CSS")}
-                            ${this.cardTagsTempate("HTML")}
-                            ${this.cardTagsTempate("JavaScript")}
-                            ${this.cardTagsTempate("LitElement")}
+                            ${this.cardTags("Bootstrap 5")}
+                            ${this.cardTags("CSS")}
+                            ${this.cardTags("HTML")}
+                            ${this.cardTags("JavaScript")}
+                            ${this.cardTags("LitElement")}
                         </ul>
                     </div>
                 </div>

@@ -58,6 +58,7 @@ html, body {
 
 /* PROJECTS */
 .card {
+    background-color:  rgba(0, 0, 0, 0.75);
     max-width: 20rem;
 }
 
