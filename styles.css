@@ -2,7 +2,8 @@
     --golden: #fde38e;
     --green: #8BD4A0;
     --salmon: #E44F59;
-    --white:  #dbdbdb;
+    --white:  #cccccc;
+    --grey: rgb(35, 38, 46);
 
     --ff-header: "Satisfy", cursive;
     --ff-title: "Mulish", sans-serif;
@@ -30,7 +31,7 @@ body {
 #header-title {
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: .3rem;
-    color: white;
+    color: var(--white);
     font-family: var(--ff-header);
     font-size: 2.3rem;
     margin: 0px;
@@ -55,21 +56,53 @@ body {
 }
 
 .page-body {
+    color: var(--white);
     margin: 3rem 0 4.5rem;
 }
 
 .page-title {
+    color: var(--golden);
     font-family: var(--ff-title);
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
+.section-link {
+    text-decoration: none;
+    color: var(--golden);
+}
+
+.section-link:hover {
+    text-decoration: underline;
+    color: var(--white);
+}
+
 /* PROJECTS */
 .card {
+    background-color: var(--grey);
     font-family: var(--ff-title);
     max-width: 20rem;
 }
 
 .card a {
+    color: var(--green);
     text-decoration: none;
+}
+
+.card a:hover {
+    color: var(--white);
+}
+
+.card h5:hover {
+    text-decoration: underline;
+}
+
+.card-text {
+    color: var(--white);
+}
+
+li span.badge.card-tag {
+     border: 1px solid var(--green);
+     background-color: var(--grey);
+     color: var(--white);
 }

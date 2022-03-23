@@ -7,10 +7,13 @@ class ArticlesPage extends LitElement {
             <h1 class="page-title text-center">ARTICLE GENERATOR</h1>
             <section class="page-text">
                 <p class="text-center">Sometimes I'm in the mood to write (
-                    <a href="https://blog.willoughbylabs.com/" target="_blank" rel="noopener noreferrer">blog</a> |
-                    <a href="https://twitter.com/willowbeehive" target="_blank" rel="noopener noreferrer">Twitter</a>).
+                    <a href="https://blog.willoughbylabs.com/" target="_blank" rel="noopener noreferrer"
+                        class="section-link">blog</a> |
+                    <a href="https://twitter.com/willowbeehive" target="_blank" rel="noopener noreferrer"
+                        class="section-link">Twitter</a>).
                     Shoutout to my favorite writing tool,
-                    <a href="https://www.notion.so/" target="_blank" rel="noopener noreferrer">Notion</a>; it's pretty
+                    <a href="https://www.notion.so/" target="_blank" rel="noopener noreferrer" class="section-link">Notion</a>;
+                    it's pretty
                     fetch.
                 </p>
                 <div style="width:100%;height:0;padding-bottom:56%;position:relative;">

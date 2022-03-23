@@ -30,7 +30,7 @@ class ProjectsPage extends LitElement {
                 ${cardTagsArr.map((tag) => 
                     html`
                         <li class="list-inline-item">
-                            <span class="badge bg-warning text-dark">${tag}</span>
+                            <span class="badge card-tag">${tag}</span>
                         </li>
                     `
                 )}
