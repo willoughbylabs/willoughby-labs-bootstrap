@@ -5,11 +5,11 @@ class ProjectsPage extends LitElement {
     cardComponent(cardData) {
         return html`
         <div class="card mb-3 mx-2">
-            <h5 class="card-title my-3">
+            <h5 class="card-title mt-4 mb-3">
                 <a href="${cardData.siteHref}" target="_blank" rel="noopener noreferrer">${cardData.title}</a>    
             </h5>
             ${cardData.gitHref ? 
-                html`<a href=${cardData.gitHref} class="git-icon"><i class="bi bi-github"></i></a>` : html``  
+                html`<a href=${cardData.gitHref} class="git-icon pt-2 pb-3"><i class="bi bi-github"></i></a>` : html``  
             }
             <img src="${cardData.imgSrc}" class="card-img-top" alt="${cardData.imgAlt}">
             <div class="card-body">
@@ -21,7 +21,7 @@ class ProjectsPage extends LitElement {
                 ${this.cardTags(cardData.tags)}  
             </div>
         </div>
-        `
+        `;
     }
 
     cardTags(cardTagsArr) {
@@ -41,9 +41,9 @@ class ProjectsPage extends LitElement {
     render() {
         return html`
             <div class="page-body text-center">
-                <h1>Projects</h1>
+                <h1 class="page-title">PROJECTS</h1>
                 <p>Brought to you by the teacher in everyone. I hope you'll discover something fetch.</p>
-                <section class="d-flex flex-wrap justify-content-center">
+                <section class="d-flex flex-wrap justify-content-center page-text">
                     <!-- CScrub -->
                     ${this.cardComponent(
                         {
@@ -95,7 +95,7 @@ class ProjectsPage extends LitElement {
                     <!-- Photography -->
                     ${this.cardComponent(
                         {
-                            title: "Photopgrahy",
+                            title: "Photography",
                             siteHref: "https://unsplash.com/@willoughbylabs",
                             imgSrc: "../img/tribune-thumb.jpg",
                             imgAlt: "Three people looking at the gothic architecture of Chicago's Tribune Tower from a large balcony.",

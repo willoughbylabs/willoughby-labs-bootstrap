@@ -4,8 +4,8 @@ class AboutPage extends LitElement {
     render() {
         return html`
         <div class="page-body" style="max-width: 550px;">
-            <h2 class="text-center">About</h2>
-            <section>
+            <h2 class="page-title text-center">ABOUT</h2>
+            <section class="page-text">
                 <p class="text-center">
                     My name is Andrew but my friends call me Willoughby. Former Air Force brat, now a <a
                         href="https://en.wikipedia.org/wiki/Chicago-style_hot_dog" target="_blank"

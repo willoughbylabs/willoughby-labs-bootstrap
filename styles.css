@@ -4,8 +4,10 @@
     --salmon: #E44F59;
     --white:  #dbdbdb;
 
-    --ff-header: 'Satisfy', cursive;
-}
+    --ff-header: "Satisfy", cursive;
+    --ff-title: "Mulish", sans-serif;
+    --ff-body: "Cabin", sans-serif;
+}   
 
 /* GENERAL */
 body {
@@ -14,6 +16,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    font-family: var(--ff-body);
 }
 
 html, body {
@@ -31,17 +34,23 @@ html, body {
 /* HEADER */
 #header-title {
     background-color: rgba(0, 0, 0, 0.75);
-    color: var(--green);
+    border-radius: .3rem;
+    color: white;
     font-family: var(--ff-header);
     font-size: 2.3rem;
-    padding: 1rem;
-    border-radius: .3rem;
     margin: 0px;
+    padding: 1rem;
 }
 
 /* NAVBAR */
-.navbar-brand img {
-    max-height: 35px;
+#brand-link {
+    font-size: 1rem;
+    font-family: var(--ff-title);
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-family: var(--ff-title);
 }
 
 /* PAGE CONTENT */
@@ -53,11 +62,18 @@ html, body {
 }
 
 .page-body {
-    margin: 2rem 0 4rem;
+    margin: 3rem 0 4.5rem;
+}
+
+.page-title {
+    font-family: var(--ff-title);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* PROJECTS */
 .card {
+    font-family: var(--ff-title);
     max-width: 20rem;
 }
 
