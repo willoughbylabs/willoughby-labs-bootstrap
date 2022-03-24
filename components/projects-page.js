@@ -63,7 +63,7 @@ class ProjectsPage extends LitElement {
                             siteHref: "https://github.com/willoughbylabs/cscrub-api",
                             imgSrc: "../img/cscrub-api.png",
                             imgAlt: "An example of returned JSON from a query requesting a city council member and their votes on legislation.",
-                            gitHref: "https://github.com/willoughbylabs/tribute_Milton-Lee-Olive",
+                            gitHref: "https://github.com/willoughbylabs/cscrub-api",
                             cardText: "A JSON API that shares council members, legislation, and votes from Chicago City Council meetings.",
                             tags: ["API", "Express", "JSON", "Node.js"]
                         }
@@ -75,7 +75,7 @@ class ProjectsPage extends LitElement {
                             siteHref: "https://willoughbylabs.github.io/tribute_Milton-Lee-Olive/",
                             imgSrc: "../img/milton.png",
                             imgAlt: "A photo of Milton Lee Olive III in his military uniform.",
-                            gitHref: "https://github.com/willoughbylabs/cscrub-api",
+                            gitHref: "https://github.com/willoughbylabs/tribute_Milton-Lee-Olive",
                             cardText: "A tribute to the Black, Medal of Honor veteran from Chicago who sacrificed his life for others.",
                             tags: ["Bootstrap 3", "CSS", "GitHub Pages", "HTML", "JavaScript"]
                         }
