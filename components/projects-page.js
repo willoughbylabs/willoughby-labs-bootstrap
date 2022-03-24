@@ -88,7 +88,7 @@ class ProjectsPage extends LitElement {
                             imgSrc: "../img/mychi.png",
                             imgAlt: "A dashboard with cards showing train-arrival predictions from the Chicago Transit Authority.",
                             gitHref: "https://github.com/willoughbylabs/mychi",
-                            cardText: "A template for a dashboard to display Chicago open data in an at-a-glance, concise format. Built with the Train Tracker API.",
+                            cardText: "A template for a dashboard to display Chicago open data. Built with the Train Tracker API.",
                             tags: ["Bootstrap 5", "CSS", "Flask-SQLAlchemy", "Heroku", "HTML", "Jasmine", "JSON", "JavaScript", "Python"]
                         }
                     )}

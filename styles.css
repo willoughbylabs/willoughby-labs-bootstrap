@@ -31,7 +31,7 @@ body {
 #header-title {
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: .3rem;
-    color: var(--white);
+    color: var(--golden);
     font-family: var(--ff-header);
     font-size: 2.3rem;
     margin: 0px;
@@ -40,6 +40,7 @@ body {
 
 /* NAVBAR */
 #brand-link {
+    color: var(--white);
     font-size: 1rem;
     font-family: var(--ff-title);
 }
@@ -47,6 +48,22 @@ body {
 .nav-link {
     font-size: 1rem;
     font-family: var(--ff-title);
+}
+
+#main-links a {
+    color: var(--golden);
+}
+
+#main-links a:hover {
+    color: var(--white);
+}
+
+#social-links a {
+    color: var(--white);
+}
+
+#social-links a:hover {
+    color: var(--golden);
 }
 
 /* PAGE CONTENT */
@@ -85,7 +102,7 @@ body {
 }
 
 .card a {
-    color: var(--green);
+    color: var(--golden);
     text-decoration: none;
 }
 
@@ -102,7 +119,7 @@ body {
 }
 
 li span.badge.card-tag {
-     border: 1px solid var(--green);
+     border: 1px solid var(--white);
      background-color: var(--grey);
      color: var(--white);
 }
