@@ -14,7 +14,7 @@ class AboutPage extends LitElement {
                     cycling, attempting to skateboard, astronomy, video games, architecture, history, photography,
                     instruments &
                     vinyl, bird watching...I'm
-                    only bored when I choose to be. I'm passionate about civic tech and tools to help folks digest data and
+                    only bored when I want to be. I'm passionate about civic tech and tools to help folks digest data and
                     make informed decisions. Let's <a href="https://meangirls.fandom.com/wiki/Fetch" target="_blank"
                         rel="noopener noreferrer" class="section-link">channel your inner Gretchen</a> and make fetch happen.
                 </p>
